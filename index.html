@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+</head>
+<body>
+    <header>
+        <h1>Teste Sua Sorte</h1>
+        <h2>Tente Adivinhar o Número</h2>
+    </header>
+    <form>
+        <label for="inicio">Número Inicial</label>
+        <select required name="inicio" id="numInicio">
+            <option value="0">0</option>
+            <option value="10">10</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+            <option value="10000">10000</option>
+            <option value="100000">100000</option>
+            <option value="1000000">1000000</option>
+        </select>
+
+        <label for="final">Número Final</label>
+        <select required name="final" id="numFinal">
+            <option value="10">10</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+            <option value="10000">10000</option>
+            <option value="100000">100000</option>
+            <option value="1000000">1000000</option>
+        </select>
+
+        <label for="escolhido">Escolha o Seu Número:</label>
+        <input type="text" name="escolhido" id="escolhido">
+
+        <input type="button" value="Adivinhar" onclick="adivinhar()">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
