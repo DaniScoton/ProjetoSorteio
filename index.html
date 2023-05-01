@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sorteio</title>
 </head>
 <body>
     <header>
-        <h1>Teste Sua Sorte</h1>
+        <h1>🍀 Teste Sua Sorte 🍀</h1>
         <h2>Tente Adivinhar o Número</h2>
     </header>
     <form>
-        <label for="inicio">Número Inicial</label>
-        <select required name="inicio" id="numInicio">
-            <option value="0">0</option>
-            <option value="10">10</option>
-            <option value="100">100</option>
-            <option value="1000">1000</option>
-            <option value="10000">10000</option>
-            <option value="100000">100000</option>
-            <option value="1000000">1000000</option>
-        </select>
+        <div class="linha-1">
+            <label for="inicio">Número Inicial:</label>
+            <select required name="inicio" id="numInicio">
+                <option value="0">0</option>
+                <option value="10">10</option>
+                <option value="100">100</option>
+                <option value="1000">1000</option>
+                <option value="10000">10000</option>
+                <option value="100000">100000</option>
+                <option value="1000000">1000000</option>
+            </select>
 
-        <label for="final">Número Final</label>
-        <select required name="final" id="numFinal">
-            <option value="10">10</option>
-            <option value="100">100</option>
-            <option value="1000">1000</option>
-            <option value="10000">10000</option>
-            <option value="100000">100000</option>
-            <option value="1000000">1000000</option>
-        </select>
-
-        <label for="escolhido">Escolha o Seu Número:</label>
-        <input type="text" name="escolhido" id="escolhido">
-
-        <input type="button" value="Adivinhar" onclick="adivinhar()">
+            <label for="final">Número Final:</label>
+            <select required name="final" id="numFinal">
+                <option value="10">10</option>
+                <option value="100">100</option>
+                <option value="1000">1000</option>
+                <option value="10000">10000</option>
+                <option value="100000">100000</option>
+                <option value="1000000">1000000</option>
+            </select>
+        </div>
+        <div class="linha-2">
+            <label for="escolhido">Escolha o Seu Número:</label>
+            <input type="text" name="escolhido" id="escolhido">
+        </div>
+        <div class="botao-div">
+        <input type="button" value="Adivinhar" onclick="adivinhar()" class="botao">
+        </div>
     </form>
+    <span id="msg"></span>
     <script src="script.js"></script>
 </body>
 </html>

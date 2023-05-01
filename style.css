@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 99vw;
+    height: 94vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 27px;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Montserrat';
+    color: rgb(76, 76, 221);
+    margin-bottom: 3px;
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: rgb(49, 48, 48);
+}
+
+form{
+    color: rgb(49, 48, 48);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+}
+
+label{
+    margin-right: 10px;
+}
+
+.linha-1{
+    margin-bottom: 30px;
+}
+
+#numInicio{
+    margin-right: 50px;
+    font-size: 22px;
+}
+
+#numFinal{
+    font-size: 22px;
+}
+
+.linha-2{
+    display: flex;
+    justify-content: center;
+}
+
+#escolhido{
+    font-size: 22px;
+}
+
+.botao{
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background: rgb(76, 76, 221);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    border: none;
+    box-shadow: 1px 3px 0 1px #666, 2px 2px 2px #000;
+}
+
+.botao:hover{
+    background: rgb(110, 110, 243);
+}
+
+.botao:active{
+    transform: scale(0.9);
+}
+
+.botao-div{
+    display: flex;
+    justify-content: center;
+}
+
+.msg-erro{
+    color: red;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.msg-certo{
+    color: rgb(7, 192, 7);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+}
